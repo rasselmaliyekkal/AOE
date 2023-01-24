@@ -2002,6 +2002,8 @@
                                     },
                                     "keySource": "Microsoft.Storage"
                                 },
+								"allowBlobPublicAccess": false,
+								"minimumTlsVersion": "TLS1_2",
                                 "accessTier": "Cool"
                             }
                         },
@@ -2124,6 +2126,7 @@
                                 "administratorLogin": "[parameters('sqlAdminLogin')]",
                                 "administratorLoginPassword": "[parameters('sqlAdminPassword')]",
                                 "version": "12.0",
+								"minimalTlsVersion": "1.2",
                                 "publicNetworkAccess": "Enabled"
                             },
                             "resources": [
